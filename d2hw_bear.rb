@@ -17,7 +17,7 @@ attr_reader(:name, :type, :stomach)
   end
 
   def fish_taken(river)
-    @stomach.push river.fish.delete_at(1)
+    @stomach.push river.fish.delete_at(river.fish.length() - 1)
   end
 
 
